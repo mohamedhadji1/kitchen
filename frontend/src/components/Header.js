@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { ChefHat, Phone, Gallery, Home } from "lucide-react";
+import { ChefHat, Phone, Images, Home } from "lucide-react";
 
 const Header = ({ activeTab, setActiveTab }) => {
   const navItems = [
     { id: "home", label: "Home", icon: Home },
-    { id: "gallery", label: "Gallery", icon: Gallery },
+    { id: "gallery", label: "Gallery", icon: Images },
     { id: "contact", label: "Contact", icon: Phone }
   ];
 
@@ -55,7 +55,7 @@ const Header = ({ activeTab, setActiveTab }) => {
             className="md:hidden"
             onClick={() => setActiveTab(activeTab === "home" ? "gallery" : activeTab === "gallery" ? "contact" : "home")}
           >
-            <Gallery className="w-4 h-4" />
+            <Images className="w-4 h-4" />
           </Button>
         </div>
       </div>
